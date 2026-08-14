@@ -1,0 +1,33 @@
+# Entornos y credenciales
+.env
+*.env
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Bases de datos locales
+bot/bot.db
+Project/chroma_db/**/*.sqlite3
+
+# Bases vectoriales persistentes (se regeneran desde el código fuente)
+bot/rag/chroma_store/
+Project/chroma_db/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editores / SO
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Claude
+.claude/
+
+# Notas
+.notes/

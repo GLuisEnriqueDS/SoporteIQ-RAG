@@ -1,0 +1,100 @@
+[
+  {
+    "id": "sin_senal",
+    "categoria": "conexion-caida",
+    "palabras_clave": ["sin internet", "no conecta", "no navega", "sin señal", "caído", "no hay wifi", "luz roja"],
+    "pregunta": "No tengo internet, ¿qué hago?",
+    "respuesta": "Vamos a revisar esto paso a paso 🔧\n1. Verifica las luces de tu equipo ONT/Router: la luz de \"Internet\" o \"WAN\" debe estar verde fija. Si está roja, apagada o parpadeando, hay un problema de señal.\n2. Desconecta el router de la corriente, espera 30 segundos y vuelve a conectarlo.\n3. Espera 2-3 minutos a que reinicie completamente y prueba de nuevo.\n4. Si sigue sin funcionar, revisa que el cable de fibra (el finito, amarillo o azul) no esté doblado bruscamente, pisado o desconectado del equipo.\n\nSi después de esto sigues sin señal, es probable que sea una falla en la red y debas reportarla a soporte técnico. 📶"
+  },
+  {
+    "id": "luces_equipo",
+    "categoria": "luces-equipo",
+    "palabras_clave": ["led", "luces", "power", "pon", "los", "wan", "luz roja", "luz parpadeando", "significado luces"],
+    "pregunta": "¿Qué significan las luces de mi router?",
+    "respuesta": "Aquí tienes la guía rápida de luces 💡\n- POWER (encendido): debe estar verde fija. Apagada = el equipo no tiene corriente.\n- PON / LOS / Internet (fibra): debe estar verde fija. Roja o parpadeando = no hay señal óptica llegando desde la red (posible corte de fibra o falla de servicio).\n- LAN (1,2,3,4): verde o parpadeando cuando hay un dispositivo conectado por cable. Apagada si no hay nada conectado por ese puerto.\n- WLAN / WiFi: verde o parpadeando indica que el wifi está encendido y transmitiendo.\n\nSi la luz de PON/Internet está roja o parpadeando en rojo, no es algo que puedas resolver reiniciando el equipo: probablemente hay una falla en la fibra y debe revisarla un técnico. 🚨"
+  },
+  {
+    "id": "internet_lento",
+    "categoria": "velocidad-lenta",
+    "palabras_clave": ["lento", "lag", "se traba", "buffer", "velocidad baja", "no carga rápido", "ping alto"],
+    "pregunta": "Mi internet está muy lento, ¿qué puedo hacer?",
+    "respuesta": "Vamos a optimizar tu conexión 🚀\n1. Verifica cuántos dispositivos están conectados a la vez (celulares, smart TV, consolas). Muchos dispositivos usando la red al mismo tiempo pueden bajar la velocidad percibida.\n2. Haz una prueba de velocidad conectado por cable (no wifi) en fast.com o speedtest.net y compárala con la velocidad de tu plan.\n3. Si por cable la velocidad es correcta pero por wifi es lenta, el problema es de cobertura wifi, no del servicio.\n4. Reinicia el router (desconéctalo 30 segundos y vuelve a conectarlo).\n5. Evita tener el router pegado a paredes gruesas, microondas o muchos aparatos electrónicos cerca.\n\nSi la velocidad por cable sigue siendo muy inferior a la contratada después de estos pasos, repórtalo a soporte técnico indicando el resultado del test de velocidad. 📊"
+  },
+  {
+    "id": "cobertura_wifi",
+    "categoria": "cobertura-wifi",
+    "palabras_clave": ["wifi no llega", "señal débil", "no hay wifi en cuarto", "cobertura", "wifi no alcanza"],
+    "pregunta": "El wifi no llega bien a todas las habitaciones",
+    "respuesta": "Esto es normal en casas grandes o de varios pisos, ya que el router tiene un alcance limitado 🏠\n- Ubica el router en un punto central de la vivienda, elevado y sin obstáculos grandes alrededor.\n- Evita colocarlo dentro de muebles cerrados, cerca del microondas o pegado a paredes de concreto/metal.\n- Para cubrir áreas más lejanas puedes usar un extensor de wifi o un sistema mesh compatible.\n- Si notas que la señal wifi es baja incluso cerca del router, puede ser una falla del equipo y debes reportarlo."
+  },
+  {
+    "id": "wifi_intermitente",
+    "categoria": "wifi-intermitente",
+    "palabras_clave": ["se desconecta", "se cae el wifi", "intermitente", "entra y sale", "se corta cada rato"],
+    "pregunta": "El wifi se desconecta cada cierto tiempo",
+    "respuesta": "Vamos a revisar posibles causas 🔄\n1. Reinicia el router (30 segundos desconectado).\n2. Verifica que el cable de fibra y el cable de corriente estén bien conectados, sin partes sueltas.\n3. Revisa si la desconexión ocurre solo en un dispositivo o en todos. Si es solo en uno, el problema puede ser de ese equipo (actualiza sus drivers/wifi o reinícialo).\n4. Si el corte ocurre en todos los dispositivos al mismo tiempo y de forma repetida, puede tratarse de una falla intermitente en la señal de fibra y debe ser evaluada por un técnico."
+  },
+  {
+    "id": "dispositivo_especifico",
+    "categoria": "dispositivo-especifico",
+    "palabras_clave": ["un dispositivo no conecta", "mi celular no tiene internet", "mi pc no conecta", "un equipo sin wifi"],
+    "pregunta": "Todos los dispositivos tienen internet menos uno",
+    "respuesta": "Si solo un dispositivo está afectado, el problema normalmente no es del servicio de Fibra Tech sino del equipo 📱💻\n1. Olvida la red wifi en ese dispositivo y vuelve a conectarte ingresando la clave nuevamente.\n2. Reinicia el dispositivo.\n3. Verifica que el wifi esté activado y en modo avión desactivado.\n4. Revisa si tiene alguna app de VPN o firewall que pueda estar bloqueando la conexión.\n\nSi tras esto el dispositivo sigue sin poder conectarse mientras los demás sí funcionan, contáctanos para revisar si hay un límite de dispositivos conectados o un bloqueo específico."
+  },
+  {
+    "id": "reinicio_router",
+    "categoria": "reinicio-equipo",
+    "palabras_clave": ["reiniciar router", "apagar y prender", "reset", "reinicio de fábrica"],
+    "pregunta": "¿Cómo reinicio mi router?",
+    "respuesta": "Sigue estos pasos 🔌\n1. Desconecta el router de la toma de corriente (no basta con el botón de encendido en algunos modelos).\n2. Espera 30 segundos sin conexión.\n3. Vuelve a conectarlo y espera 2-3 minutos a que todas las luces se estabilicen en verde.\n4. Prueba la conexión nuevamente.\n\n⚠️ No confundas esto con el reset de fábrica (botón hundido con un objeto punzante), ya que ese proceso borra toda la configuración, incluyendo el nombre y clave del wifi. Solo debe hacerse si un técnico lo indica."
+  },
+  {
+    "id": "cambiar_clave_wifi",
+    "categoria": "configuracion-wifi",
+    "palabras_clave": ["cambiar clave wifi", "cambiar nombre red", "ssid", "contraseña wifi"],
+    "pregunta": "¿Cómo cambio la clave de mi wifi?",
+    "respuesta": "Puedes hacerlo desde el panel de administración de tu router 🔐\n1. Conéctate a la red wifi de tu router.\n2. Abre un navegador y entra a la dirección del router (usualmente 192.168.1.1 o 192.168.0.1, según el modelo).\n3. Inicia sesión con el usuario y clave de administrador (vienen en la etiqueta del equipo, generalmente en la parte inferior).\n4. Busca la sección \"Wireless\" o \"WiFi\" y cambia el nombre de red (SSID) o la contraseña.\n5. Guarda los cambios y reconecta tus dispositivos con la nueva clave.\n\n💡 Si no tienes los datos de acceso al panel o no logras entrar, contáctanos y te ayudamos a validarlos."
+  },
+  {
+    "id": "falla_masiva",
+    "categoria": "falla-masiva",
+    "palabras_clave": ["mantenimiento", "corte programado", "sin servicio en la zona", "falla masiva", "zona afectada"],
+    "pregunta": "No tengo señal y mis vecinos tampoco",
+    "respuesta": "Cuando la falla afecta a varios usuarios en la misma zona, generalmente se trata de: 🌐\n- Un corte de fibra óptica en la ruta troncal (por trabajos de construcción, cortes eléctricos, deslaves, etc).\n- Un mantenimiento programado en la red.\n\nEn estos casos no es necesario reiniciar tu equipo repetidamente, ya que la falla es externa. Nuestro equipo técnico ya está trabajando o será notificado para resolverlo lo antes posible. Puedes reportarlo para que quede registrado y recibir actualizaciones del estado. 🛠️"
+  },
+  {
+    "id": "cable_danado",
+    "categoria": "cable-fibra-dañado",
+    "palabras_clave": ["cable cortado", "cable roto", "cable pelado", "mordido", "animal cortó cable", "cable dañado"],
+    "pregunta": "Creo que el cable de fibra está dañado",
+    "respuesta": "El cable de fibra óptica es delicado, así que revisemos con cuidado ⚠️\n- No intentes empalmar, cortar o manipular el cable tú mismo; requiere equipo especializado (fusionadora) y puede dañarse permanentemente.\n- Si ves el cable cortado, mordido por una mascota/roedor, muy doblado o pelado, evita forzarlo o moverlo bruscamente.\n- Repórtalo a soporte técnico indicando dónde está el daño (dentro o fuera de la vivienda) para agendar una visita técnica."
+  },
+  {
+    "id": "mudanza_reubicacion",
+    "categoria": "mudanza-reubicacion",
+    "palabras_clave": ["mudanza", "cambiar de sitio el router", "mover el router", "cambio de dirección", "reubicación"],
+    "pregunta": "Quiero mover mi router a otra habitación o mudarme de casa",
+    "respuesta": "Ten en cuenta lo siguiente 📦\n- Mover el router dentro de la misma vivienda normalmente no afecta el servicio, solo asegúrate de que el cable de fibra alcance sin tensarse ni doblarse en ángulos muy cerrados.\n- Si vas a mudarte a otra dirección, la fibra óptica no se puede trasladar por tu cuenta: se necesita una nueva instalación en la nueva dirección, sujeta a cobertura de la zona. Contacta a soporte para gestionar el cambio de domicilio."
+  },
+  {
+    "id": "equipo_calentamiento",
+    "categoria": "equipo-hardware",
+    "palabras_clave": ["se calienta", "se apaga solo", "se reinicia solo", "huele a quemado", "router caliente"],
+    "pregunta": "El router se apaga solo o se siente muy caliente",
+    "respuesta": "Por seguridad, ten en cuenta esto 🔥\n- Es normal que el equipo esté tibio, pero no debe estar caliente al punto de ser incómodo al tacto ni oler a quemado.\n- Verifica que tenga ventilación (no lo cubras ni lo metas en espacios cerrados).\n- Si se apaga solo repetidamente o notas olor a quemado, desconéctalo de inmediato y repórtalo como una falla de equipo; no sigas usándolo hasta que sea revisado."
+  },
+  {
+    "id": "visita_tecnica",
+    "categoria": "visita-tecnica",
+    "palabras_clave": ["visita técnica", "viene un técnico", "agendar visita", "revisión en sitio"],
+    "pregunta": "¿Cuándo necesito una visita técnica?",
+    "respuesta": "Si ya intentaste los pasos básicos (reiniciar el equipo, revisar cables, revisar luces) y el problema persiste, es momento de agendar una visita técnica. Un especialista revisará: 🧰\n- El estado del cable de fibra y sus conectores.\n- La potencia de la señal óptica que llega al equipo.\n- El estado físico del router/ONT.\n\nAl reportarlo, indica qué pasos ya probaste para agilizar el diagnóstico. 📋"
+  },
+  {
+    "id": "escalar_agente",
+    "categoria": "escalar-agente",
+    "palabras_clave": ["hablar con alguien", "agente humano", "persona real", "no me resolvió el bot"],
+    "pregunta": "Necesito hablar con una persona, no con el bot",
+    "respuesta": "Claro, con gusto te conectamos con un agente de soporte técnico en vivo. 🧑‍💻\nNuestro horario de atención es de lunes a domingo, de 08:00 a.m. a 10:00 p.m. Si es fuera de ese horario, tu caso quedará registrado para ser atendido apenas se reanude el horario de atención."
+  }
+]

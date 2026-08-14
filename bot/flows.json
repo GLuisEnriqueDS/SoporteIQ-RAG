@@ -1,0 +1,224 @@
+{
+  "start": "welcome",
+  "nodes": {
+    "welcome": {
+      "message": "¡Hola! 🧡 Te damos la bienvenida a Fibra Tech.\nSoy tu asistente virtual.\n\nCuéntame, ¿qué servicio deseas consultar hoy? 👇",
+      "options": [
+        {
+          "key": "1",
+          "label": "Fibra Tech",
+          "description": "Tu Fibra Tech: paga, consulta saldo, reporta fallas y mucho más",
+          "goto": "fibra_menu"
+        },
+        {
+          "key": "2",
+          "label": "Habla con un agente",
+          "description": "Chatea con nosotros: lunes a domingo 08:00 a.m a 10:00 p.m",
+          "handler": "not_implemented"
+        }
+      ]
+    },
+    "fibra_menu": {
+      "message": "Aquí encontrarás todo sobre tu servicio de Fibra Tech 🌐, el internet más estable de Venezuela.\nCuéntame, ¿qué deseas gestionar hoy?",
+      "back": "welcome",
+      "options": [
+        {
+          "key": "1",
+          "label": "Saldos y Pagos",
+          "description": "Consulta tu saldo al instante y paga tu servicio de forma simple",
+          "goto": "saldos_menu"
+        },
+        {
+          "key": "2",
+          "label": "Soporte Técnico",
+          "description": "Aquí podrás chatear con un agente en vivo y resolver tu problema",
+          "goto": "soporte_tecnico_chat"
+        },
+        {
+          "key": "3",
+          "label": "Info de Planes",
+          "description": "Planes de fibra para todos los gustos",
+          "goto": "planes_menu"
+        }
+      ]
+    },
+    "soporte_tecnico_chat": {
+      "type": "input",
+      "message": "🛠️ Cuéntame qué problema tienes con tu señal o conexión de Fibra Tech y te ayudo a resolverlo.\n(Escribe \"agente\" para hablar con soporte humano, o \"0\" para volver al menú)",
+      "handler": "soporte_tecnico_rag",
+      "next": "fibra_menu"
+    },
+    "planes_menu": {
+      "message": "⚡ Queremos que encuentres el plan de navegación perfecto.\n¡Mira todas las opciones que tenemos para tí!",
+      "back": "fibra_menu",
+      "options": [
+        {
+          "key": "1",
+          "label": "1Gbps",
+          "goto": "plan_1gbps"
+        },
+        {
+          "key": "2",
+          "label": "600 Mbps",
+          "goto": "plan_600mbps"
+        },
+        {
+          "key": "3",
+          "label": "500 Mbps",
+          "goto": "plan_500mbps"
+        },
+        {
+          "key": "4",
+          "label": "400 Mbps",
+          "goto": "plan_400mbps"
+        }
+      ]
+    },
+    "plan_1gbps": {
+      "message": "🏆 Lo más TOP de Fibra Tech\nCon nuestro plan de 1Giga, obtienes una conexión ultrarrápida diseñada para hogares con la mayor demanda de conectividad. ⚡\nDisfruta de la máxima potencia y estabilidad para que todos en casa naveguen, trabajen y jueguen en simultáneo con una conexión simétrica sin límites. ¡Es la experiencia digital definitiva! 🚀\nAdemás, te instalamos el Router Wifi 6 ¡Para que le saques el jugo a tu Plan 1Giga! 😉",
+      "back": "planes_menu",
+      "options": []
+    },
+    "plan_600mbps": {
+      "message": "¡Experimenta la máxima fluidez! 💎 Con 600Mbps, disfruta de videos en 4K impecables y descargas de grandes proyectos en cuestión de segundos.\nEs la solución premium de Fibra Tech para quienes exigen una conexión simétrica sin límites, ideal para creadores de contenido y hogares de alta demanda. 🚀\nAdemás, te instalamos el Router Wifi 6 ¡Para que le saques el jugo a tus 600Mbps! 😉",
+      "back": "planes_menu",
+      "options": []
+    },
+    "plan_500mbps": {
+      "message": "¡Juega como un profesional! 🎮 Nuestro plan de 500Mbps es el ideal para los gamers.\nExperimenta partidas online sin interrupciones, descargas ultrarrápidas y la estabilidad perfecta para tus streams gracias a nuestra conexión simétrica. Con Fibra Tech, tienes la ventaja competitiva que necesitas. 🚀\nAdemás, te instalamos el Router Wifi 6 ¡Para que le saques el jugo a tus 500Mbps! 😉",
+      "back": "planes_menu",
+      "options": []
+    },
+    "plan_400mbps": {
+      "message": "⭐ Nuestro Plan Recomendado ⭐\nNuestro plan de 400Mbps te ofrece la potencia que necesitas para trabajar, jugar y disfrutar al máximo.\nRealiza videollamadas con claridad perfecta y disfruta de videojuegos en línea sin interrupciones gracias a nuestra conexión simétrica. ¡Es la velocidad ideal para que todo vuele con Fibra Tech! 🚀\nAdemás, te instalamos el Router Wifi 5 ¡Para que le saques el jugo a tus 400Mbps! 😉",
+      "back": "planes_menu",
+      "options": []
+    },
+    "saldos_menu": {
+      "message": "¡Gestionar tu cuenta es muy fácil! 💡 Consulta tu estado actual, reporta tus pagos o cambia tu periodo de facturación aquí:\n¿Qué deseas gestionar hoy?",
+      "back": "fibra_menu",
+      "options": [
+        {
+          "key": "1",
+          "label": "Ver mi saldo",
+          "description": "Revisa tu saldo y estado de cuenta",
+          "goto": "ver_saldo_input"
+        },
+        {
+          "key": "2",
+          "label": "Mi Nro de Cliente",
+          "description": "Elige tu plan de pago: 7,10,15 días hábiles.",
+          "goto": "nro_cliente_input"
+        },
+        {
+          "key": "3",
+          "label": "Reportar Pago",
+          "description": "Registra tu pago y mantén tu señal activa",
+          "goto": "reportar_pago_identificar_input"
+        },
+        {
+          "key": "4",
+          "label": "Opciones de Pago",
+          "description": "Conoce nuestros canales de pago y recarga fácil.",
+          "goto": "opciones_pago_menu"
+        }
+      ]
+    },
+    "ver_saldo_input": {
+      "type": "input",
+      "message": "Para mostrarte el balance de tu cuenta Fibra Tech, necesito identificar tu cuenta. 🔍\nPor favor, escribe el correo electrónico con el que te registraste en Fibra Tech: ⬇️",
+      "handler": "ver_saldo_lookup",
+      "next": "saldos_menu"
+    },
+    "nro_cliente_input": {
+      "type": "input",
+      "message": "Con gusto te ayudo a consultar tu N° de Cliente de tu suscripción de Fibra Tech.\nPara buscarlo en el sistema, por favor indícame el correo electrónico con el que te registraste: ⬇️",
+      "handler": "nro_cliente_lookup",
+      "next": "saldos_menu"
+    },
+    "reportar_pago_identificar_input": {
+      "type": "input",
+      "message": "Vamos a registrar los datos de tu pago para Fibra Tech! ⚡\nPrimero, indícame el correo electrónico con el que te registraste en Fibra Tech: ⬇️",
+      "handler": "reportar_pago_identificar",
+      "next": "reportar_pago_menu"
+    },
+    "reportar_pago_menu": {
+      "message": "💡 ¡Un dato importante! Si pagaste desde tu N° de celular registrado en nuestro sistema, ¡tu pago ya se aplicó automáticamente! No necesitas reportarlo aquí.\nSi usaste otro método, puedes registrarlo rápidamente de dos formas:\n1️⃣ Por aquí, siguiendo mis instrucciones.\n2️⃣ En nuestra Recarga Express (url simulada)\n\nSi deseas continuar conmigo, por favor, selecciona el tipo de pago que realizaste",
+      "back": "saldos_menu",
+      "options": [
+        {
+          "key": "1",
+          "label": "Pago Móvil",
+          "goto": "reportar_pm_telefono_input"
+        },
+        {
+          "key": "2",
+          "label": "Transferencia",
+          "goto": "reportar_transferencia_datos_input"
+        }
+      ]
+    },
+    "reportar_pm_telefono_input": {
+      "type": "input",
+      "message": "¡Un tip rápido! 💡\n- Si pagaste desde el número que registraste al contratar tu servicio, tu pago se aplicará automáticamente. ¡Así de fácil!\n- Si usaste otro número de teléfono para el pago, continúa aquí abajo: ⬇️\n\nPor favor, indícame el número de teléfono desde el cual realizaste el pago: 📱",
+      "handler": "pago_movil_telefono",
+      "next": "reportar_pm_fecha_input"
+    },
+    "reportar_pm_fecha_input": {
+      "type": "input",
+      "message": "¿En qué fecha realizaste el pago? Escríbela en formato dd/mm/aa (ej. 10/08/26): 📅",
+      "handler": "pago_movil_fecha",
+      "next": "reportar_pm_monto_input"
+    },
+    "reportar_pm_monto_input": {
+      "type": "input",
+      "message": "Perfecto. Ahora indícame el monto pagado (Bs.): 💰",
+      "handler": "pago_movil_monto",
+      "next": "saldos_menu"
+    },
+    "reportar_transferencia_datos_input": {
+      "type": "input",
+      "message": "Indícame el banco y el número de referencia de tu transferencia (ej. \"Banesco 000123456789\"): 🏦",
+      "handler": "transferencia_datos",
+      "next": "reportar_transferencia_fecha_input"
+    },
+    "reportar_transferencia_fecha_input": {
+      "type": "input",
+      "message": "¿En qué fecha realizaste la transferencia? Escríbela en formato dd/mm/aa (ej. 10/08/26): 📅",
+      "handler": "transferencia_fecha",
+      "next": "reportar_transferencia_monto_input"
+    },
+    "reportar_transferencia_monto_input": {
+      "type": "input",
+      "message": "Por último, ¿cuál fue el monto transferido (Bs.)? 💰",
+      "handler": "transferencia_monto",
+      "next": "saldos_menu"
+    },
+    "opciones_pago_menu": {
+      "message": "Puedes realizar tus pagos de forma rápida y segura. ¿Qué moneda prefieres utilizar?",
+      "back": "saldos_menu",
+      "options": [
+        {
+          "key": "1",
+          "label": "Bolívares (Bs)",
+          "goto": "pago_bs_info"
+        },
+        {
+          "key": "2",
+          "label": "Divisas (USD)",
+          "goto": "pago_usd_info"
+        }
+      ]
+    },
+    "pago_bs_info": {
+      "message": "💳 Canales de pago en Bolívares (Bs):\n\n📱 Pago Móvil (simulado)\n   Banco: Banesco\n   Teléfono: 0412-1234567\n   Cédula/RIF: J-12345678-9\n\n🏦 Transferencia (simulada)\n   Banco: Banesco\n   Cuenta: 0134-1234-56-1234567890\n   Titular: Fibra Tech, C.A.\n   RIF: J-12345678-9",
+      "back": "opciones_pago_menu",
+      "options": []
+    },
+    "pago_usd_info": {
+      "message": "💳 Canales de pago en Divisas (USD):\n\n📲 Zelle (simulado)\n   Correo: pagos@fibratech.com\n   Titular: Fibra Tech LLC\n\n🏦 Transferencia internacional (simulada)\n   Banco: Bank of America\n   Cuenta: 0000-1234-5678\n   Titular: Fibra Tech LLC",
+      "back": "opciones_pago_menu",
+      "options": []
+    }
+  }
+}
